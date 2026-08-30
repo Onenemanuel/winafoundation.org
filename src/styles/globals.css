@@ -2,11 +2,11 @@
 @import "tailwindcss";
 
 :root {
-  --primary-dark: #0f766e;
-  --primary: #10b981;
-  --primary-light: #d1fae5;
-  --secondary: #f97316;
-  --secondary-hover: #ea580c;
+  --primary: #0e6655;
+  --primary-dark: #083c32;
+  --primary-light: #d1f2eb;
+  --secondary: #f39c12;
+  --secondary-hover: #d68910;
   --accent: #fef3c7;
 }
 

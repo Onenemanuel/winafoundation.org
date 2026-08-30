@@ -31,20 +31,24 @@ export default function Page() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex justify-between items-center h-20">
                 <div className="shrink-0 flex items-center">
-                  <Link className="flex items-center gap-2" href="index.html">
-                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
-                      <HeartHandshake className="w-6 h-6" />
-                    </div>
-                    <Text
-                      variant="bold"
-                      className="font-heading font-bold text-2xl text-primaryDark"
-                    >
-                      {" "}
-                      Hope
-                      <Text className="text-secondary"> Horizon </Text>
-                    </Text>
+                  <Link className="flex items-center gap-3 group" href="/">
+                    <Image
+                      src="logo.jpeg"
+                      alt="WINAfrica Foundation Logo"
+                      width={56}
+                      height={56}
+                      className="w-12 h-12 md:w-14 md:h-14 object-contain shrink-0"
+                      priority
+                    />
+
+                    <span className="font-heading font-bold text-2xl md:text-3xl text-primaryDark leading-none">
+                      WIN
+                      <span className="text-secondary mr-1.5">Africa</span>
+                      <span className="hidden sm:inline ">Foundation</span>
+                    </span>
                   </Link>
                 </div>
+
                 <div className="hidden md:flex items-center space-x-8">
                   <Link
                     className="text-text hover:text-primary transition-colors font-medium"
@@ -58,7 +62,7 @@ export default function Page() {
                     href="programs.html"
                   >
                     {" "}
-                    Our Programs{" "}
+                    Programs{" "}
                   </Link>
                   <Link
                     className="text-text hover:text-primary transition-colors font-medium"
@@ -76,11 +80,11 @@ export default function Page() {
                   </Link>
                   <Link
                     contentKey="cta_44"
-                    className="bg-secondary hover:bg-secondaryHover text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/20 transform hover:-translate-y-0.5"
+                    className="flex gap-1 items-center bg-secondary hover:bg-secondaryHover text-white px-6 py-2.5 rounded-full font-bold"
                     href="donate.html"
                   >
                     {" "}
-                    Donate Now{" "}
+                    Donate <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
                 <div className="md:hidden flex items-center">
@@ -113,7 +117,7 @@ export default function Page() {
                   href="programs.html"
                 >
                   {" "}
-                  Our Programs{" "}
+                  Programs{" "}
                 </Link>
                 <Link
                   contentKey="cta_47"
@@ -153,29 +157,30 @@ export default function Page() {
               <div className="text-center lg:text-left">
                 <Badge className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primaryDark font-medium text-sm mb-6">
                   <Text className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-                  Over 50,000 lives impacted this year{" "}
+                  Social Worker-Led Activites
                 </Badge>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-textDark mb-6 leading-tight">
-                  Bring Hope to
-                  <br />
-                  <Text variant="italic" className="text-primary italic">
-                    {" "}
-                    Every Heart{" "}
-                  </Text>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-textDark tracking-tight leading-[1.12] mb-6 text-balance">
+                  Championing Change for{" "}
+                  <span className="text-transparent bg-clip-text bg-linear-to-r from-(--primary) to-(--secondary)">
+                    Healthier, Resilient
+                  </span>{" "}
+                  Communities
                 </h1>
                 <p className="text-xl text-text mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  We believe in a world where every individual has access to
-                  clean water, education, and a chance to thrive. Join our
-                  movement today.
+                  WINAfrica Foundation is an indigenous, not-for-profit health
+                  organization improving health and well-being through
+                  accessible, inclusive and evidence-based interventions in
+                  Sexual & Reproductive Health and Mental Health & Psychosocial
+                  Support.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                   <Link
                     contentKey="cta_50"
-                    className="w-full sm:w-auto px-8 py-4 bg-secondary hover:bg-secondaryHover text-white font-bold rounded-full text-lg transition-all shadow-xl shadow-secondary/25 transform hover:-translate-y-1"
+                    className="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-primaryDark text-white font-bold rounded-full text-lg"
                     href="donate.html"
                   >
                     {" "}
-                    Make a Donation{" "}
+                    Programmes
                   </Link>
                   <Link
                     contentKey="cta_51"
@@ -183,8 +188,7 @@ export default function Page() {
                     href="programs.html"
                   >
                     {" "}
-                    View Our Work
-                    <ArrowRight className="w-5 h-5" />
+                    Get in Touch
                   </Link>
                 </div>
               </div>
@@ -199,8 +203,8 @@ export default function Page() {
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/70 to-transparent p-8">
                     <p className="text-white font-heading italic text-xl">
-                      "Education is the most powerful weapon which you can use
-                      to change the world."
+                      Trusted community health educators deliver care where it's
+                      needed most.
                     </p>
                   </div>
                 </div>
