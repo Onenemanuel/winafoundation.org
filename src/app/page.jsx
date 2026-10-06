@@ -5,15 +5,24 @@ import { BookOpen } from "lucide-react";
 import { Droplets } from "lucide-react";
 import { Facebook } from "lucide-react";
 import { Heart } from "lucide-react";
-import { HeartHandshake } from "lucide-react";
 import { Image } from "@/components/Image";
 import { Instagram } from "lucide-react";
 import { Link } from "@/components/Link";
-import { MapPin } from "lucide-react";
 import { Menu } from "lucide-react";
 import { Text } from "@/components/Text";
 import { Twitter } from "lucide-react";
-import { Youtube } from "lucide-react";
+import {
+  Youtube,
+  Users,
+  Accessibility,
+  Sparkles,
+  School,
+  Landmark,
+  ShieldCheck,
+} from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { HeartPulse, Brain, Dna, Lock } from "lucide-react";
+import { Handshake, HeartHandshake, Award } from "lucide-react";
 
 export const metadata = {
   title: "Charity Organization - Free Tailwind Template",
@@ -167,11 +176,14 @@ export default function Page() {
                   Communities
                 </h1>
                 <p className="text-xl text-text mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  WINAfrica Foundation is an indigenous, not-for-profit health
-                  organization improving health and well-being through
-                  accessible, inclusive and evidence-based interventions in
-                  Sexual & Reproductive Health and Mental Health & Psychosocial
-                  Support.
+                  We are an indigenous, not-for-profit health organization
+                  working to improve the health and well-being of individuals,
+                  families and communities through accessible, inclusive and
+                  evidence-based health interventions. We focus on Sexual &
+                  Reproductive Health, Mental Health & Psychosocial Support,
+                  Sickle Cell Awareness, and Protection & Safeguards empowering
+                  people with knowledge, strengthening community support systems
+                  and connecting those in need to appropriate services.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                   <Link
@@ -196,15 +208,15 @@ export default function Page() {
                 <div className="absolute -inset-4 bg-accent/50 rounded-full blur-3xl -z-10"></div>
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
                   <Image
-                    variant="cover"
                     className="w-full h-full object-cover"
-                    src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop"
                     alt="Happy children"
+                    variant="cover"
+                    src="/hero.jpg"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/70 to-transparent p-8">
                     <p className="text-white font-heading italic text-xl">
-                      Trusted community health educators deliver care where it's
-                      needed most.
+                      Trusted health education and peer support, bringing
+                      practical knowledge closer to young people.
                     </p>
                   </div>
                 </div>
@@ -212,47 +224,69 @@ export default function Page() {
             </div>
           </div>
         </section>
+
         {/* Clean Water */}
         <section id="clean_water" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="p-8 rounded-2xl bg-background border border-gray-100 hover:shadow-lg transition-shadow text-center group">
                 <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                  <Droplets className="w-8 h-8 text-primary group-hover:text-white" />
+                  <HeartPulse className="w-8 h-8 text-primary group-hover:text-white" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-textDark mb-3">
                   {" "}
-                  Clean Water{" "}
+                  Sexual & Reproductive Health{" "}
                 </h3>
                 <p className="text-text">
-                  Providing sustainable water solutions to remote villages,
-                  reducing disease and improving quality of life.
+                  Promoting accurate, inclusive and age-appropriate information
+                  that enables individuals and communities to make informed
+                  decisions about sexual and reproductive health and well-being.
                 </p>
               </div>
+
               <div className="p-8 rounded-2xl bg-background border border-gray-100 hover:shadow-lg transition-shadow text-center group">
                 <div className="w-16 h-16 mx-auto bg-secondary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
-                  <BookOpen className="w-8 h-8 text-secondary group-hover:text-white" />
+                  <Brain className="w-8 h-8 text-secondary group-hover:text-white" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-textDark mb-3">
                   {" "}
-                  Education{" "}
+                  Mental Health & Psychosocial Support{" "}
                 </h3>
                 <p className="text-text">
-                  Building schools and providing scholarships to ensure every
-                  child has the opportunity to learn.
+                  Promoting mental well-being, reducing stigma and strengthening
+                  awareness of healthy coping, psychosocial support and pathways
+                  to appropriate care.
                 </p>
               </div>
+
               <div className="p-8 rounded-2xl bg-background border border-gray-100 hover:shadow-lg transition-shadow text-center group">
                 <div className="w-16 h-16 mx-auto bg-accent rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-400 transition-colors">
-                  <Heart className="w-8 h-8 text-yellow-700" />
+                  <Dna className="w-8 h-8 text-yellow-700" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-textDark mb-3">
                   {" "}
-                  Healthcare{" "}
+                  Sickle Cell Awareness{" "}
                 </h3>
                 <p className="text-text">
-                  Delivering essential medical supplies and mobile clinics to
-                  underserved communities.
+                  Increasing understanding of sickle cell disease, promoting
+                  early awareness, reducing stigma and supporting individuals,
+                  families and communities with reliable health information.
+                </p>
+              </div>
+
+              <div className="p-8 rounded-2xl bg-background border border-gray-100 hover:shadow-lg transition-shadow text-center group">
+                <div className="w-16 h-16 mx-auto bg-accent rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-400 transition-colors">
+                  <Lock className="w-8 h-8 text-yellow-700" />
+                </div>
+                <h3 className="text-2xl font-heading font-bold text-textDark mb-3">
+                  {" "}
+                  Protection & Safeguards{" "}
+                </h3>
+                <p className="text-text">
+                  Promoting safe, respectful and inclusive environments through
+                  prevention and response to GBV, violence against children,
+                  harassment, exploitation and other protection concerns,
+                  including alcohol and substance misuse prevention.
                 </p>
               </div>
             </div>
@@ -277,8 +311,8 @@ export default function Page() {
                 Where We Make a Difference{" "}
               </h2>
               <p className="text-xl text-text max-w-2xl mx-auto">
-                We focus on holistic community development through targeted
-                initiatives.
+                We deliver inclusive, evidence-based health interventions that
+                respond to the needs of individuals, families and communities.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -288,22 +322,20 @@ export default function Page() {
                   <Image
                     variant="cover"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=800&auto=format&fit=crop"
-                    alt="Water Project"
+                    alt="Sexual & Reproductive Health"
+                    src="srh.png"
                   />
-                  <Badge className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">
-                    {" "}
-                    ACTIVE{" "}
-                  </Badge>
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-heading font-bold text-textDark mb-3">
                     {" "}
-                    Water for Life{" "}
+                    Sexual & Reproductive Health Programme{" "}
                   </h3>
                   <p className="text-text mb-6">
-                    Installing solar-powered wells in drought-prone regions of
-                    East Africa.
+                    We promote informed decision-making, healthy relationships
+                    and access to accurate sexual and reproductive health
+                    information, with particular attention to adolescents and
+                    young people.
                   </p>
                   <Link
                     className="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all"
@@ -321,22 +353,19 @@ export default function Page() {
                   <Image
                     variant="cover"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=800&auto=format&fit=crop"
-                    alt="Education"
+                    alt="Mental Health & Psychosocial Support"
+                    src="mhpss.png"
                   />
-                  <Badge className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-secondary">
-                    {" "}
-                    URGENT{" "}
-                  </Badge>
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-heading font-bold text-textDark mb-3">
                     {" "}
-                    Girls' Education{" "}
+                    Mental Health & Psychosocial Support Programme{" "}
                   </h3>
                   <p className="text-text mb-6">
-                    Providing scholarships and safe learning environments for
-                    girls in South Asia.
+                    We promote mental well-being, reduce stigma and strengthen
+                    awareness of psychosocial support and appropriate pathways
+                    to care for individuals and communities.
                   </p>
                   <Link
                     className="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all"
@@ -352,24 +381,56 @@ export default function Page() {
               <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    variant="cover"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=800&auto=format&fit=crop"
-                    alt="Healthcare"
+                    alt="Sickle Cell Awareness"
+                    src="sickle-cell.png"
+                    variant="cover"
                   />
-                  <Badge className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">
-                    {" "}
-                    ONGOING{" "}
-                  </Badge>
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-heading font-bold text-textDark mb-3">
                     {" "}
-                    Mobile Clinics{" "}
+                    Sickle Cell Awareness Programme{" "}
                   </h3>
                   <p className="text-text mb-6">
-                    Bringing doctors and medicine to remote mountain villages in
-                    the Andes.
+                    We raise awareness about sickle cell disease, challenge
+                    misconceptions and stigma, and promote knowledge that
+                    supports individuals, families and communities affected by
+                    or at risk of sickle cell disease.
+                  </p>
+                  <Link
+                    className="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all"
+                    href="programs.html"
+                  >
+                    {" "}
+                    Read More
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>{" "}
+              {/* Program 4 */}
+              <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    alt="Protection & Safeguards"
+                    src="protection.png"
+                    variant="cover"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="text-2xl font-heading font-bold text-textDark mb-3">
+                    {" "}
+                    Protection & Safeguards Programme{" "}
+                  </h3>
+                  <p className="text-text mb-6">
+                    We work to promote safe and respectful environments and
+                    strengthen prevention and response to protection concerns,
+                    including gender-based violence, violence against children,
+                    harassment, exploitation and survivor protection. The
+                    programme also incorporates prevention and awareness on
+                    alcohol and substance misuse as part of protecting health,
+                    safety and well-being.
                   </p>
                   <Link
                     className="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all"
@@ -405,49 +466,78 @@ export default function Page() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-                  {" "}
                   Communities We Serve{" "}
                 </h2>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-secondary">
+                  Health Starts With People{" "}
+                </h2>
                 <p className="text-teal-100 text-lg mb-8 leading-relaxed">
-                  We work hand-in-hand with local leaders to identify the most
-                  vulnerable populations. Our approach is community-led and
-                  sustainable.
+                  We work with communities to understand their health and
+                  well-being needs and develop practical, inclusive and
+                  sustainable responses. <br />
+                  <br /> We are implementing our initial programmes in Lira City
+                  and Lira District in Northern Uganda, focusing on reaching
+                  adolescents, young people, families, and other community
+                  members who may face barriers to health information, support,
+                  and services.
+                  <br />
+                  <br />
+                  We work with:
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-accent" />
+                      <Users className="w-5 h-5 text-accent" />
                     </div>
                     <Text className="text-xl font-medium">
                       {" "}
-                      Rural Villages in Sub-Saharan Africa{" "}
+                      Children and families{" "}
                     </Text>
                   </li>
                   <li className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-accent" />
+                      <Accessibility className="w-5 h-5 text-accent" />
                     </div>
                     <Text className="text-xl font-medium">
                       {" "}
-                      Urban Slums in Southeast Asia{" "}
+                      People with disabilities{" "}
                     </Text>
                   </li>
                   <li className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-accent" />
+                      <Sparkles className="w-5 h-5 text-accent" />
                     </div>
                     <Text className="text-xl font-medium">
                       {" "}
-                      Indigenous Communities in South America{" "}
+                      Adolescents and young people{" "}
                     </Text>
                   </li>
                   <li className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-accent" />
+                      <School className="w-5 h-5 text-accent" />
                     </div>
                     <Text className="text-xl font-medium">
                       {" "}
-                      Refugee Settlements Worldwide{" "}
+                      Schools and educational communities{" "}
+                    </Text>
+                  </li>{" "}
+                  <li className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                      <Landmark className="w-5 h-5 text-accent" />
+                    </div>
+                    <Text className="text-xl font-medium">
+                      {" "}
+                      Community leaders and local stakeholders{" "}
+                    </Text>
+                  </li>{" "}
+                  <li className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                      <ShieldCheck className="w-5 h-5 text-accent" />
+                    </div>
+                    <Text className="text-xl font-medium">
+                      {" "}
+                      Individuals and groups experiencing health or protection
+                      vulnerabilities{" "}
                     </Text>
                   </li>
                 </ul>
@@ -457,7 +547,7 @@ export default function Page() {
                 {/* Image 1 - Offset Top */}
                 <div className="relative h-48 sm:h-64 lg:h-72 w-full overflow-hidden rounded-2xl shadow-lg transform translate-y-6 sm:translate-y-8">
                   <NextImage
-                    src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=600&auto=format&fit=crop"
+                    src="1.jpg"
                     alt="Community 1"
                     fill
                     priority
@@ -469,7 +559,7 @@ export default function Page() {
                 {/* Image 2 */}
                 <div className="relative h-48 sm:h-64 lg:h-72 w-full overflow-hidden rounded-2xl shadow-lg">
                   <NextImage
-                    src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=600&auto=format&fit=crop"
+                    src="2.jpg"
                     alt="Community 2"
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -480,7 +570,7 @@ export default function Page() {
                 {/* Image 3 - Offset Bottom */}
                 <div className="relative h-48 sm:h-64 lg:h-72 w-full overflow-hidden rounded-2xl shadow-lg transform translate-y-6 sm:translate-y-8">
                   <NextImage
-                    src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=600&auto=format&fit=crop"
+                    src="3.jpg"
                     alt="Community 3"
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -491,7 +581,7 @@ export default function Page() {
                 {/* Image 4 */}
                 <div className="relative h-48 sm:h-64 lg:h-72 w-full overflow-hidden rounded-2xl shadow-lg">
                   <NextImage
-                    src="https://images.unsplash.com/photo-1542345812-d98b5cd6cf98?auto=format&fit=crop&w=600&q=80"
+                    src="4.jpeg"
                     alt="Community 4"
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -532,8 +622,9 @@ export default function Page() {
                     Listen{" "}
                   </h3>
                   <p className="text-text text-sm">
-                    We start by listening to the community's needs and
-                    aspirations.
+                    We listen to individuals, families, young people and
+                    communities to understand their experiences, priorities and
+                    health needs.
                   </p>
                 </div>
                 {/* Step 2 */}
@@ -544,10 +635,12 @@ export default function Page() {
                   </div>
                   <h3 className="text-xl font-bold text-textDark mb-2">
                     {" "}
-                    Plan{" "}
+                    Educate{" "}
                   </h3>
                   <p className="text-text text-sm">
-                    We co-create sustainable solutions with local stakeholders.
+                    We provide accessible, inclusive and evidence-based health
+                    information that helps people make informed decisions and
+                    protect their well-being.
                   </p>
                 </div>
                 {/* Step 3 */}
@@ -558,11 +651,13 @@ export default function Page() {
                   </div>
                   <h3 className="text-xl font-bold text-textDark mb-2">
                     {" "}
-                    Act{" "}
+                    Engage{" "}
                   </h3>
                   <p className="text-text text-sm">
                     {" "}
-                    We implement projects with transparency and efficiency.{" "}
+                    We work with communities, schools, local leaders and other
+                    stakeholders to create meaningful opportunities for
+                    participation, dialogue and health promotion.{" "}
                   </p>
                 </div>
                 {/* Step 4 */}
@@ -573,154 +668,81 @@ export default function Page() {
                   </div>
                   <h3 className="text-xl font-bold text-textDark mb-2">
                     {" "}
-                    Empower{" "}
+                    Connect & Strengthen{" "}
                   </h3>
                   <p className="text-text text-sm">
-                    We train locals to maintain projects, ensuring long-term
-                    success.
+                    We strengthen awareness of appropriate support and referral
+                    pathways while building the knowledge, confidence and
+                    leadership of individuals and communities to promote lasting
+                    change.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* Your Gift Changes Lives */}
-        <section id="your_gift_changes_lives" className="py-24 bg-accent/30">
+
+        {/* Support Our Work */}
+        <section id="clean_water" className="py-20 bg-primaryDark">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-textDark mb-6">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center text-white">
+              <h2 className="text-5xl md:text-6xl font-heading font-bold mb-8">
                 {" "}
-                Your Gift Changes Lives{" "}
+                Support Our Work{" "}
               </h2>
-              <p className="text-xl text-text max-w-2xl mx-auto">
-                Choose a monthly donation amount to make a sustained impact.
+              <p className="text-xl text-teal-100 mb-12 max-w-2xl mx-auto">
+                There are many ways to support healthier and more resilient
+                communities. We welcome partnerships, technical expertise,
+                resources and other forms of support that can strengthen our
+                health and well-being programmes.
               </p>
             </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Tier 1 */}
-              <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 text-center">
-                <h3 className="text-2xl font-bold text-textDark mb-2">
-                  {" "}
-                  Friend{" "}
-                </h3>
-                <div className="text-4xl font-bold text-primary mb-4">
-                  $25
-                  <Text className="text-lg text-gray-400 font-normal">
-                    {" "}
-                    /mo{" "}
-                  </Text>
+              <div className="p-8 rounded-2xl bg-background border border-gray-100 hover:shadow-lg transition-shadow text-center group">
+                <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+                  <Handshake className="w-8 h-8 text-white group-hover:text-white" />
                 </div>
-                <p className="text-text mb-8">
+                <h3 className="text-2xl font-heading font-bold text-secondary mb-3 group-hover:text-white">
                   {" "}
-                  Provides school supplies for 5 children every month.{" "}
-                </p>
-                <Link
-                  contentKey="cta_53"
-                  className="block w-full py-3 border-2 border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-white transition-colors"
-                  href="donate.html"
-                >
-                  {" "}
-                  Select{" "}
-                </Link>
-              </div>
-              {/* Tier 2 */}
-              <div className="bg-white p-8 rounded-2xl shadow-xl border-2 border-secondary text-center transform md:-translate-y-4 relative">
-                <Badge className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary text-white px-4 py-1 rounded-full text-sm font-bold">
-                  {" "}
-                  MOST POPULAR{" "}
-                </Badge>
-                <h3 className="text-2xl font-bold text-textDark mb-2">
-                  {" "}
-                  Guardian{" "}
+                  Partner With Us{" "}
                 </h3>
-                <div className="text-4xl font-bold text-secondary mb-4">
-                  $50
-                  <Text className="text-lg text-gray-400 font-normal">
-                    {" "}
-                    /mo{" "}
-                  </Text>
-                </div>
-                <p className="text-text mb-8">
-                  {" "}
-                  Provides clean water for a family of 4 for a year.{" "}
+                <p className="text-white">
+                  Organisations and institutions can explore opportunities to
+                  collaborate with us in areas aligned with our programme
+                  priorities and community needs.
                 </p>
-                <Link
-                  contentKey="cta_54"
-                  className="block w-full py-3 bg-secondary text-white font-bold rounded-full hover:bg-secondaryHover transition-colors shadow-lg shadow-secondary/20"
-                  href="donate.html"
-                >
-                  {" "}
-                  Select{" "}
-                </Link>
               </div>
-              {/* Tier 3 */}
-              <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 text-center">
-                <h3 className="text-2xl font-bold text-textDark mb-2">
+
+              <div className="p-8 rounded-2xl bg-background border border-gray-100 hover:shadow-lg transition-shadow text-center group">
+                <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+                  <HeartHandshake className="w-8 h-8 text-white group-hover:text-white" />
+                </div>
+                <h3 className="text-2xl font-heading font-bold text-secondary mb-3 group-hover:text-white">
                   {" "}
-                  Champion{" "}
+                  Contribute Your Expertise{" "}
                 </h3>
-                <div className="text-4xl font-bold text-primary mb-4">
-                  $100
-                  <Text className="text-lg text-gray-400 font-normal">
-                    {" "}
-                    /mo{" "}
-                  </Text>
-                </div>
-                <p className="text-text mb-8">
-                  {" "}
-                  Funds a mobile clinic visit for an entire village.{" "}
+                <p className="text-white">
+                  Professionals and organisations with relevant technical
+                  expertise can support knowledge sharing, capacity
+                  strengthening and programme development.
                 </p>
-                <Link
-                  contentKey="cta_55"
-                  className="block w-full py-3 border-2 border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-white transition-colors"
-                  href="donate.html"
-                >
-                  {" "}
-                  Select{" "}
-                </Link>
               </div>
-            </div>
-          </div>
-        </section>
-        {/* Be The Change You Wish To See */}
-        <section
-          id="be_the_change_you_wish_to_see"
-          className="py-24 relative overflow-hidden"
-        >
-          <div className="absolute inset-0 bg-primaryDark">
-            <Image
-              variant="cover"
-              className="w-full h-full object-cover opacity-20 mix-blend-overlay"
-              src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=2000&auto=format&fit=crop"
-              alt="Background"
-            />
-          </div>
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center text-white">
-            <h2 className="text-5xl md:text-6xl font-heading font-bold mb-8">
-              {" "}
-              Be the Change You Wish to See{" "}
-            </h2>
-            <p className="text-xl text-teal-100 mb-12 max-w-2xl mx-auto">
-              Every second counts. Your contribution today can save a life
-              tomorrow.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                contentKey="cta_56"
-                className="px-10 py-5 bg-secondary hover:bg-secondaryHover text-white font-bold text-xl rounded-full transition-all shadow-xl transform hover:scale-105"
-                href="donate.html"
-              >
-                {" "}
-                Donate Now{" "}
-              </Link>
-              <Link
-                contentKey="cta_57"
-                className="px-10 py-5 bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white font-bold text-xl rounded-full transition-all"
-                href="contact.html"
-              >
-                {" "}
-                Volunteer With Us{" "}
-              </Link>
+
+              <div className="p-8 rounded-2xl bg-background border border-gray-100 hover:shadow-lg transition-shadow text-center group">
+                <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+                  <Award className="w-8 h-8 text-white group-hover:text-white" />
+                </div>
+                <h3 className="text-2xl font-heading font-bold text-secondary mb-3 group-hover:text-white">
+                  {" "}
+                  Support Programme Delivery{" "}
+                </h3>
+                <p className="text-white">
+                  Appropriate resources and contributions can help strengthen
+                  health education, community engagement, school-based
+                  initiatives and referral pathways.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -729,27 +751,30 @@ export default function Page() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
               <div className="col-span-1 md:col-span-2">
-                <Link
-                  className="flex items-center gap-2 mb-6"
-                  href="index.html"
-                >
-                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white">
-                    <HeartHandshake className="w-5 h-5" />
-                  </div>
-                  <Text
-                    variant="bold"
-                    className="font-heading font-bold text-2xl text-primaryDark"
-                  >
-                    {" "}
-                    Hope
-                    <Text className="text-secondary"> Horizon </Text>
-                  </Text>
+                <Link className="flex items-center gap-3 group" href="/">
+                  <Image
+                    src="logo.jpeg"
+                    alt="WINAfrica Foundation Logo"
+                    width={56}
+                    height={56}
+                    className="w-12 h-12 md:w-14 md:h-14 object-contain shrink-0"
+                    priority
+                  />
+
+                  <span className="font-heading font-bold text-2xl md:text-3xl text-primaryDark leading-none">
+                    WIN
+                    <span className="text-secondary mr-1.5">Africa</span>
+                    <span className="hidden sm:inline ">Foundation</span>
+                  </span>
                 </Link>
+
                 <p className="text-text max-w-md mb-6">
-                  Dedicated to empowering communities through sustainable
-                  development, education, and healthcare initiatives.
+                  Championing Change. Working towards healthier, resilient
+                  communities through inclusive and evidence-based health
+                  interventions.
                 </p>
-                <div className="flex space-x-4">
+
+                {/* <div className="flex space-x-4">
                   <Link
                     className="text-gray-400 hover:text-primary transition-colors"
                     href="#"
@@ -774,7 +799,7 @@ export default function Page() {
                   >
                     <Youtube className="w-6 h-6" />
                   </Link>
-                </div>
+                </div> */}
               </div>
               <div>
                 <h4 className="font-bold text-textDark mb-6"> Quick Links </h4>
@@ -862,12 +887,43 @@ export default function Page() {
             <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-gray-500 text-sm">
                 {" "}
-                © 2026 HopeHorizon. 501(c)(3) Non-Profit Organization.{" "}
+                © 2026 | Win Africa Foundation.{" "}
               </p>
-              <p className="text-gray-500 text-sm flex items-center gap-1">
-                Made with
-                <Heart className="w-4 h-4 text-red-500 fill-current" />
-                for the world
+
+              <p className="text-gray-500 text-sm flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-center">
+                <span className="flex items-center gap-1.5 whitespace-nowrap">
+                  <MapPin className="w-4 h-4 text-gray-400 shrink-0" />
+                  <span>Lira City, Northern Uganda</span>
+                </span>
+
+                <span className="flex items-center gap-1.5 whitespace-nowrap">
+                  <Mail className="w-4 h-4 text-gray-400 shrink-0" />
+                  <a
+                    href="mailto:info@winafoundation.org"
+                    className="hover:text-gray-700 transition-colors"
+                  >
+                    info@winafoundation.org
+                  </a>
+                </span>
+
+                <span className="flex items-center gap-1.5">
+                  <Phone className="w-4 h-4 text-gray-400 shrink-0" />
+                  <span className="whitespace-nowrap">
+                    <a
+                      href="tel:+256790732411"
+                      className="hover:text-gray-700 transition-colors"
+                    >
+                      +256 790 732411
+                    </a>
+                    {" / "}
+                    <a
+                      href="tel:+256781938772"
+                      className="hover:text-gray-700 transition-colors"
+                    >
+                      +256 781 938772
+                    </a>
+                  </span>
+                </span>
               </p>
             </div>
           </div>
