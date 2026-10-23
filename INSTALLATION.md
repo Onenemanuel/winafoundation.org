@@ -30,7 +30,8 @@ cd charity_organization-nonprofit-modern
 ```
 
 **What's Inside:**
-- `src/` - Next.js pages and components
+- `app/` - Next.js pages
+- `components/` - Reusable UI components
 - `public/` - Static assets
 - `package.json` - Project dependencies
 - `tailwind.config.js` - Tailwind CSS configuration
@@ -81,16 +82,15 @@ npm run start
 
 ```
 charity_organization-nonprofit-modern/
+├── app/              # App Router pages
+├── components/       # Reusable UI components
+├── lib/
+│   ├── utils/        # Utility functions
+│   └── data/         # Static data and content
 ├── public/
-├── src/
-│   ├── app/          # App Router pages
-│   ├── components/     # Reusable UI components
-│   ├── lib/
-│   │   ├── utils/      # Utility functions
-│   │   └── data/       # Static data and content
-│   └── styles/         # CSS files
+├── styles/           # CSS files
 ├── package.json
-├── next.config.js
+├── next.config.ts
 └── tailwind.config.js
 ```
 

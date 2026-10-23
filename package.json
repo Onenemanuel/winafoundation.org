@@ -4,23 +4,27 @@
   "name": "winafoundation.org",
   "scripts": {
     "dev": "next dev",
-    "lint": "next lint",
+    "lint": "eslint .",
     "start": "next start",
     "build": "next build",
     "serve": "next build && firebase serve --only hosting",
     "deploy": "next build && firebase deploy --only hosting"
   },
   "dependencies": {
-    "next": "^14.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "lucide-react": "^0.344.0"
+    "lucide-react": "^1.61.0",
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "tailwindcss": "^4.0.0",
     "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.2",
     "postcss": "^8.4.0",
-    "eslint": "^8.0.0",
-    "eslint-config-next": "^14.1.0"
+    "tailwindcss": "^4.0.0",
+    "typescript": "^6.0.3"
   }
 }

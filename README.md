@@ -21,13 +21,12 @@ This project uses the **App Router**.
 ## Project Structure
 
 ```
-src/
-├── app/                # App Router pages
-├── components/         # Reusable UI components
-├── lib/
-│   ├── utils/          # Utility functions
-│   └── data/           # Static data and content
-└── styles/             # CSS and style files
+app/            # App Router pages
+components/     # Reusable UI components
+lib/
+├── utils/      # Utility functions
+└── data/       # Static data and content
+styles/         # CSS and style files
 ```
 
 ## Available Scripts
