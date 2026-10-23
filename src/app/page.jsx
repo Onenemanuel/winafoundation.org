@@ -1,161 +1,31 @@
 import NextImage from "next/image";
-import { ArrowRight } from "lucide-react";
-import { Badge } from "@/components/Badge";
-import { BookOpen } from "lucide-react";
-import { Droplets } from "lucide-react";
-import { Facebook } from "lucide-react";
-import { Heart } from "lucide-react";
-import { Image } from "@/components/Image";
-import { Instagram } from "lucide-react";
-import { Link } from "@/components/Link";
-import { Menu } from "lucide-react";
-import { Text } from "@/components/Text";
-import { Twitter } from "lucide-react";
 import {
-  Youtube,
-  Users,
   Accessibility,
-  Sparkles,
-  School,
+  ArrowRight,
+  Brain,
+  Dna,
+  HeartPulse,
   Landmark,
+  Lock,
+  School,
   ShieldCheck,
+  Sparkles,
+  Users,
 } from "lucide-react";
-import { Mail, Phone, MapPin } from "lucide-react";
-import { HeartPulse, Brain, Dna, Lock } from "lucide-react";
-import { Handshake, HeartHandshake, Award } from "lucide-react";
+import { Badge } from "@/components/Badge";
+import { Image } from "@/components/Image";
+import { Link } from "@/components/Link";
+import { Text } from "@/components/Text";
 
 export const metadata = {
-  title: "Charity Organization - Free Tailwind Template",
+  title: { absolute: "WINAfrica Foundation" },
   description:
-    "Download this free Tailwind CSS Nonprofit website template for Charity Organization. Features a modern design, fully responsive layout, and includes 6 pre-built pages like blog.html, index.html, about.html.",
+    "WINAfrica Foundation is an indigenous, not-for-profit health organization working to improve the health and well-being of individuals, families and communities in Northern Uganda.",
 };
 
 export default function Page() {
   return (
-    <div className="font-body antialiased">
-      <>
-        {/* Navigation */}
-        <header>
-          <nav className="fixed w-full z-50 top-0 left-0 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex justify-between items-center h-20">
-                <div className="shrink-0 flex items-center">
-                  <Link className="flex items-center gap-3 group" href="/">
-                    <Image
-                      src="logo.jpeg"
-                      alt="WINAfrica Foundation Logo"
-                      width={56}
-                      height={56}
-                      className="w-12 h-12 md:w-14 md:h-14 object-contain shrink-0"
-                      priority
-                    />
-
-                    <span className="font-heading font-bold text-2xl md:text-3xl text-primaryDark leading-none">
-                      WIN
-                      <span className="text-secondary mr-1.5">Africa</span>
-                      <span className="hidden sm:inline ">Foundation</span>
-                    </span>
-                  </Link>
-                </div>
-
-                <div className="hidden md:flex items-center space-x-8">
-                  <Link
-                    className="text-text hover:text-primary transition-colors font-medium"
-                    href="about.html"
-                  >
-                    {" "}
-                    About Us{" "}
-                  </Link>
-                  <Link
-                    className="text-text hover:text-primary transition-colors font-medium"
-                    href="programs.html"
-                  >
-                    {" "}
-                    Programs{" "}
-                  </Link>
-                  <Link
-                    className="text-text hover:text-primary transition-colors font-medium"
-                    href="blog.html"
-                  >
-                    {" "}
-                    Stories{" "}
-                  </Link>
-                  <Link
-                    className="text-text hover:text-primary transition-colors font-medium"
-                    href="contact.html"
-                  >
-                    {" "}
-                    Contact{" "}
-                  </Link>
-                  <Link
-                    contentKey="cta_44"
-                    className="flex gap-1 items-center bg-secondary hover:bg-secondaryHover text-white px-6 py-2.5 rounded-full font-bold"
-                    href="donate.html"
-                  >
-                    {" "}
-                    Donate <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
-                <div className="md:hidden flex items-center">
-                  <button
-                    id="mobile-menu-btn"
-                    className="text-text hover:text-primary focus:outline-none"
-                  >
-                    <Menu className="w-8 h-8" />
-                  </button>
-                </div>
-              </div>
-            </div>
-            {/* Mobile Menu */}
-            <div
-              id="mobile-menu"
-              className="hidden md:hidden bg-white border-b border-gray-100 absolute w-full"
-            >
-              <div className="px-4 pt-2 pb-6 space-y-2">
-                <Link
-                  contentKey="cta_45"
-                  className="block px-3 py-3 text-base font-medium text-text hover:bg-gray-50 rounded-lg"
-                  href="about.html"
-                >
-                  {" "}
-                  About Us{" "}
-                </Link>
-                <Link
-                  contentKey="cta_46"
-                  className="block px-3 py-3 text-base font-medium text-text hover:bg-gray-50 rounded-lg"
-                  href="programs.html"
-                >
-                  {" "}
-                  Programs{" "}
-                </Link>
-                <Link
-                  contentKey="cta_47"
-                  className="block px-3 py-3 text-base font-medium text-text hover:bg-gray-50 rounded-lg"
-                  href="blog.html"
-                >
-                  {" "}
-                  Stories{" "}
-                </Link>
-                <Link
-                  contentKey="cta_48"
-                  className="block px-3 py-3 text-base font-medium text-text hover:bg-gray-50 rounded-lg"
-                  href="contact.html"
-                >
-                  {" "}
-                  Contact{" "}
-                </Link>
-                <Link
-                  contentKey="cta_49"
-                  className="block px-3 py-3 text-base font-bold text-secondary hover:bg-orange-50 rounded-lg"
-                  href="donate.html"
-                >
-                  {" "}
-                  Donate Now →{" "}
-                </Link>
-              </div>
-            </div>
-          </nav>
-        </header>
+    <main>
         {/* Hero Section */}
         <section
           id="hero"
@@ -166,7 +36,7 @@ export default function Page() {
               <div className="text-center lg:text-left">
                 <Badge className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primaryDark font-medium text-sm mb-6">
                   <Text className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-                  Social Worker-Led Activites
+                  Community-Centred Health & Well-being
                 </Badge>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-textDark tracking-tight leading-[1.12] mb-6 text-balance">
                   Championing Change for{" "}
@@ -187,20 +57,16 @@ export default function Page() {
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                   <Link
-                    contentKey="cta_50"
-                    className="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-primaryDark text-white font-bold rounded-full text-lg"
-                    href="donate.html"
+                    className="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-primaryDark text-white font-bold rounded-full text-lg text-center"
+                    href="/programs"
                   >
-                    {" "}
-                    Programmes
+                    Explore Our Programmes
                   </Link>
                   <Link
-                    contentKey="cta_51"
                     className="w-full sm:w-auto px-8 py-4 bg-white border border-gray-200 hover:border-primary hover:text-primary text-textDark font-medium rounded-full text-lg transition-all flex items-center justify-center gap-2"
-                    href="programs.html"
+                    href="/contact"
                   >
-                    {" "}
-                    Get in Touch
+                    Get In Touch
                   </Link>
                 </div>
               </div>
@@ -342,7 +208,7 @@ export default function Page() {
                     href="programs.html"
                   >
                     {" "}
-                    Read More
+                    Learn More
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -372,7 +238,7 @@ export default function Page() {
                     href="programs.html"
                   >
                     {" "}
-                    Read More
+                    Learn More
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -403,7 +269,7 @@ export default function Page() {
                     href="programs.html"
                   >
                     {" "}
-                    Read More
+                    Learn More
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -437,7 +303,7 @@ export default function Page() {
                     href="programs.html"
                   >
                     {" "}
-                    Read More
+                    Learn More
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -451,11 +317,78 @@ export default function Page() {
                 href="programs.html"
               >
                 {" "}
-                View All Programs{" "}
+                View All Programmes{" "}
               </Link>
             </div>
           </div>
         </section>
+        {/* WINA Health Clubs */}
+        <section id="wina_health_clubs" className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <Text
+                variant="bold"
+                className="text-secondary font-bold tracking-wider uppercase text-sm"
+              >
+                Our Signature School Delivery Model
+              </Text>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-textDark mt-2 mb-6">
+                WINA Health Clubs
+              </h2>
+            </div>
+            <div className="max-w-4xl mx-auto space-y-6 text-lg text-text leading-relaxed">
+              <p>
+                WINA Health Clubs are school-based student platforms that give
+                learners a safe, structured space to learn, discuss, participate,
+                and connect around issues affecting their health, well-being,
+                safety, and education. Through peer learning, leadership, and
+                practical activities, WINA Health Clubs cover sexual and
+                reproductive health, mental health and psychosocial well-being,
+                substance abuse prevention, and protection.
+              </p>
+              <p>
+                At the heart of the model is the WINA Health Check-In, a simple,
+                regular way of bringing health education directly to learners.
+                Delivered as a 3-5-minute talk during school assemblies,
+                functions, or other organized gatherings, each Check-In focuses
+                on one practical message, from menstrual health and HIV
+                prevention to stress management, healthy relationships, GBV
+                prevention, or where and how to seek help.
+              </p>
+              <p>
+                Together, WINA Health Clubs and Health Check-Ins create a
+                continuous, school-based approach to health promotion, helping
+                learners access reliable information, speak about issues that
+                affect them, recognize when they need support, and connect with
+                the right help.
+              </p>
+            </div>
+            <div className="max-w-4xl mx-auto mt-10 p-6 md:p-8 rounded-2xl bg-background border border-gray-100 flex gap-4">
+              <ShieldCheck className="w-8 h-8 text-primary shrink-0" />
+              <div>
+                <h3 className="font-bold text-textDark mb-2">Safeguard note</h3>
+                <p className="text-text leading-relaxed">
+                  Student Health Champions are trained as peer educators and
+                  health-promoting leaders, not health professionals. They do
+                  not diagnose, counsel, treat, or provide any medical or
+                  clinical service. Their role is to share approved health
+                  information, encourage positive behaviours, promote early
+                  help-seeking, and guide learners towards appropriate adult,
+                  school, or professional support when needed.
+                </p>
+              </div>
+            </div>
+            <div className="text-center mt-12">
+              <Link
+                className="inline-block px-8 py-3 bg-primary hover:bg-primaryDark text-white font-bold rounded-full"
+                href="/approaches#health-clubs"
+              >
+                Learn About WINA Health Clubs
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Communities We Serve */}
         <section
           id="communities_we_serve"
@@ -487,29 +420,18 @@ export default function Page() {
                 <ul className="space-y-4">
                   <li className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                      <Users className="w-5 h-5 text-accent" />
-                    </div>
-                    <Text className="text-xl font-medium">
-                      {" "}
-                      Children and families{" "}
-                    </Text>
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                      <Accessibility className="w-5 h-5 text-accent" />
-                    </div>
-                    <Text className="text-xl font-medium">
-                      {" "}
-                      People with disabilities{" "}
-                    </Text>
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                       <Sparkles className="w-5 h-5 text-accent" />
                     </div>
                     <Text className="text-xl font-medium">
-                      {" "}
-                      Adolescents and young people{" "}
+                      Adolescents and young people
+                    </Text>
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                      <Users className="w-5 h-5 text-accent" />
+                    </div>
+                    <Text className="text-xl font-medium">
+                      Children and families
                     </Text>
                   </li>
                   <li className="flex items-center gap-4">
@@ -517,30 +439,40 @@ export default function Page() {
                       <School className="w-5 h-5 text-accent" />
                     </div>
                     <Text className="text-xl font-medium">
-                      {" "}
-                      Schools and educational communities{" "}
+                      Schools and educational communities
                     </Text>
-                  </li>{" "}
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                      <Accessibility className="w-5 h-5 text-accent" />
+                    </div>
+                    <Text className="text-xl font-medium">
+                      People with disabilities
+                    </Text>
+                  </li>
                   <li className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                       <Landmark className="w-5 h-5 text-accent" />
                     </div>
                     <Text className="text-xl font-medium">
-                      {" "}
-                      Community leaders and local stakeholders{" "}
+                      Community leaders and local stakeholders
                     </Text>
-                  </li>{" "}
+                  </li>
                   <li className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                       <ShieldCheck className="w-5 h-5 text-accent" />
                     </div>
                     <Text className="text-xl font-medium">
-                      {" "}
                       Individuals and groups experiencing health or protection
-                      vulnerabilities{" "}
+                      vulnerabilities
                     </Text>
                   </li>
                 </ul>
+                <p className="text-teal-100 text-lg mt-8 leading-relaxed">
+                  Our approach is designed to learn from local experience and
+                  build models that can be responsibly adapted and expanded to
+                  other communities over time.
+                </p>
               </div>
 
               <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
@@ -682,253 +614,49 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Support Our Work */}
-        <section id="clean_water" className="py-20 bg-primaryDark">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center text-white">
-              <h2 className="text-5xl md:text-6xl font-heading font-bold mb-8">
-                {" "}
-                Support Our Work{" "}
-              </h2>
-              <p className="text-xl text-teal-100 mb-12 max-w-2xl mx-auto">
-                There are many ways to support healthier and more resilient
-                communities. We welcome partnerships, technical expertise,
-                resources and other forms of support that can strengthen our
-                health and well-being programmes.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-8 rounded-2xl bg-background border border-gray-100 hover:shadow-lg transition-shadow text-center group">
-                <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
-                  <Handshake className="w-8 h-8 text-white group-hover:text-white" />
-                </div>
-                <h3 className="text-2xl font-heading font-bold text-secondary mb-3 group-hover:text-white">
-                  {" "}
-                  Partner With Us{" "}
-                </h3>
-                <p className="text-white">
-                  Organisations and institutions can explore opportunities to
-                  collaborate with us in areas aligned with our programme
-                  priorities and community needs.
-                </p>
-              </div>
-
-              <div className="p-8 rounded-2xl bg-background border border-gray-100 hover:shadow-lg transition-shadow text-center group">
-                <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
-                  <HeartHandshake className="w-8 h-8 text-white group-hover:text-white" />
-                </div>
-                <h3 className="text-2xl font-heading font-bold text-secondary mb-3 group-hover:text-white">
-                  {" "}
-                  Contribute Your Expertise{" "}
-                </h3>
-                <p className="text-white">
-                  Professionals and organisations with relevant technical
-                  expertise can support knowledge sharing, capacity
-                  strengthening and programme development.
-                </p>
-              </div>
-
-              <div className="p-8 rounded-2xl bg-background border border-gray-100 hover:shadow-lg transition-shadow text-center group">
-                <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
-                  <Award className="w-8 h-8 text-white group-hover:text-white" />
-                </div>
-                <h3 className="text-2xl font-heading font-bold text-secondary mb-3 group-hover:text-white">
-                  {" "}
-                  Support Programme Delivery{" "}
-                </h3>
-                <p className="text-white">
-                  Appropriate resources and contributions can help strengthen
-                  health education, community engagement, school-based
-                  initiatives and referral pathways.
-                </p>
-              </div>
-            </div>
+        {/* Support for Healthier Communities */}
+        <section id="support_for_healthier_communities" className="py-24 bg-white">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-textDark mb-6">
+              Support for Healthier Communities
+            </h2>
+            <p className="text-xl text-text mb-6 leading-relaxed">
+              Your support can help us expand access to health education,
+              wellbeing initiatives, community engagement and appropriate
+              referral pathways.
+            </p>
+            <p className="text-xl text-text mb-10 leading-relaxed">
+              We welcome individuals, institutions and organisations interested
+              in supporting our work through partnerships, technical expertise,
+              resources and other forms of collaboration.
+            </p>
+            <Link
+              className="inline-flex items-center gap-2 px-8 py-4 bg-secondary hover:bg-secondaryHover text-white font-bold rounded-full text-lg"
+              href="/support"
+            >
+              Partner With Us <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </section>
-        {/* Footer */}
-        <footer className="bg-white border-t border-gray-100 pt-20 pb-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-              <div className="col-span-1 md:col-span-2">
-                <Link className="flex items-center gap-3 group" href="/">
-                  <Image
-                    src="logo.jpeg"
-                    alt="WINAfrica Foundation Logo"
-                    width={56}
-                    height={56}
-                    className="w-12 h-12 md:w-14 md:h-14 object-contain shrink-0"
-                    priority
-                  />
-
-                  <span className="font-heading font-bold text-2xl md:text-3xl text-primaryDark leading-none">
-                    WIN
-                    <span className="text-secondary mr-1.5">Africa</span>
-                    <span className="hidden sm:inline ">Foundation</span>
-                  </span>
-                </Link>
-
-                <p className="text-text max-w-md mb-6">
-                  Championing Change. Working towards healthier, resilient
-                  communities through inclusive and evidence-based health
-                  interventions.
-                </p>
-
-                {/* <div className="flex space-x-4">
-                  <Link
-                    className="text-gray-400 hover:text-primary transition-colors"
-                    href="#"
-                  >
-                    <Facebook className="w-6 h-6" />
-                  </Link>
-                  <Link
-                    className="text-gray-400 hover:text-primary transition-colors"
-                    href="#"
-                  >
-                    <Twitter className="w-6 h-6" />
-                  </Link>
-                  <Link
-                    className="text-gray-400 hover:text-primary transition-colors"
-                    href="#"
-                  >
-                    <Instagram className="w-6 h-6" />
-                  </Link>
-                  <Link
-                    className="text-gray-400 hover:text-primary transition-colors"
-                    href="#"
-                  >
-                    <Youtube className="w-6 h-6" />
-                  </Link>
-                </div> */}
-              </div>
-              <div>
-                <h4 className="font-bold text-textDark mb-6"> Quick Links </h4>
-                <ul className="space-y-4">
-                  <li>
-                    <Link
-                      className="text-text hover:text-primary transition-colors"
-                      href="about.html"
-                    >
-                      {" "}
-                      About Us{" "}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-text hover:text-primary transition-colors"
-                      href="programs.html"
-                    >
-                      {" "}
-                      Our Programs{" "}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-text hover:text-primary transition-colors"
-                      href="blog.html"
-                    >
-                      {" "}
-                      Impact Stories{" "}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-text hover:text-primary transition-colors"
-                      href="contact.html"
-                    >
-                      {" "}
-                      Contact{" "}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-bold text-textDark mb-6"> Get Involved </h4>
-                <ul className="space-y-4">
-                  <li>
-                    <Link
-                      className="text-text hover:text-primary transition-colors"
-                      href="donate.html"
-                    >
-                      {" "}
-                      Donate{" "}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-text hover:text-primary transition-colors"
-                      href="#"
-                    >
-                      {" "}
-                      Volunteer{" "}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-text hover:text-primary transition-colors"
-                      href="#"
-                    >
-                      {" "}
-                      Partner With Us{" "}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-text hover:text-primary transition-colors"
-                      href="#"
-                    >
-                      {" "}
-                      Careers{" "}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-gray-500 text-sm">
-                {" "}
-                © 2026 | Win Africa Foundation.{" "}
-              </p>
-
-              <p className="text-gray-500 text-sm flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-center">
-                <span className="flex items-center gap-1.5 whitespace-nowrap">
-                  <MapPin className="w-4 h-4 text-gray-400 shrink-0" />
-                  <span>Lira City, Northern Uganda</span>
-                </span>
-
-                <span className="flex items-center gap-1.5 whitespace-nowrap">
-                  <Mail className="w-4 h-4 text-gray-400 shrink-0" />
-                  <a
-                    href="mailto:info@winafoundation.org"
-                    className="hover:text-gray-700 transition-colors"
-                  >
-                    info@winafoundation.org
-                  </a>
-                </span>
-
-                <span className="flex items-center gap-1.5">
-                  <Phone className="w-4 h-4 text-gray-400 shrink-0" />
-                  <span className="whitespace-nowrap">
-                    <a
-                      href="tel:+256790732411"
-                      className="hover:text-gray-700 transition-colors"
-                    >
-                      +256 790 732411
-                    </a>
-                    {" / "}
-                    <a
-                      href="tel:+256781938772"
-                      className="hover:text-gray-700 transition-colors"
-                    >
-                      +256 781 938772
-                    </a>
-                  </span>
-                </span>
-              </p>
-            </div>
+        <section id="champion_change" className="py-24 bg-primaryDark text-white">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+              Champion Change With Us
+            </h2>
+            <p className="text-xl text-teal-100 mb-10 leading-relaxed">
+              Healthier communities are built through knowledge, collaboration,
+              and access to the right support. Join us in advancing inclusive
+              health and well-being for children, adolescents, young people,
+              families, and communities.
+            </p>
+            <Link
+              className="inline-flex items-center gap-2 px-8 py-4 bg-secondary hover:bg-secondaryHover text-white font-bold rounded-full text-lg"
+              href="/support"
+            >
+              Partner With Us <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
-        </footer>
-      </>
-    </div>
+        </section>
+    </main>
   );
 }
